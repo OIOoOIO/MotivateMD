@@ -1,0 +1,41 @@
+.c-app_pbar {
+  background: #e1e8ee;
+  border-radius: 3px;
+  display: flex;
+  height: 15px;
+  &__step {
+    flex: 1;
+    &:first-child {
+      border-radius: 3px 0 0 3px;
+    }
+    &:after {
+      content: ' ';
+      width: 5px;
+      height: 5px;
+      background: #064277;
+      display: block;
+      top: 5px;
+      position: relative;
+      left: -5px;
+      border-radius: 33px;
+      float: right;
+    }
+    &.is-filled {
+      background: rgb(6, 66, 119);
+    }
+    &.is-last {
+      background: rgb(6, 66, 119);
+      &:after {
+        width: 20px;
+        height: 20px;
+        display: block;
+        border: 3px solid white;
+        top: -3px;
+        position: relative;
+        left: 9px;
+        border-radius: 16px;
+        float: right;
+      }
+    }
+  }
+}

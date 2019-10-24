@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40.988 40.469">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: rgba(0,0,0,0);
+        stroke-miterlimit: 10;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.185" y1="-0.211" x2="1.383" y2="1.532" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9cf4ed"/>
+      <stop offset="1" stop-color="#acacff"/>
+    </linearGradient>
+  </defs>
+  <g id="Goals" transform="translate(21319.211 -995.65)">
+    <path id="Union_12" data-name="Union 12" class="cls-1" d="M26.7,39.469v-2.71h10.68V26.181h2.613V36.759c0,2.439-.946,2.71-2.613,2.71Zm-23.989,0C.271,39.469,0,38.529,0,36.862V26.181H2.706v10.68H13.287v2.608ZM13.4,19.936a6.646,6.646,0,1,1,6.646,6.648A6.643,6.643,0,0,1,13.4,19.936Zm23.874-6.644V2.612H26.7V0H37.276c2.437,0,2.712.944,2.712,2.612v10.68ZM0,13.292V2.71C0,.275.94,0,2.607,0h10.68V2.71H2.607V13.292Z" transform="translate(-21318.711 996.15)"/>
+  </g>
+</svg>

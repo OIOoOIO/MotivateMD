@@ -1,0 +1,32 @@
+.c-goal_pbar {
+  position: relative;
+
+  &__bar {
+    background: #e1e8ee;
+    border-radius: 3px;
+    display: flex;
+    height: 15px;
+    overflow: hidden;
+    &.is-large {
+      height: 28px;
+    }
+  }
+  &__step {
+    border-radius: 3px;
+    &.is-filled {
+      background: rgb(6, 66, 119);
+    }
+  }
+  &__info {
+    display: flex;
+    position: absolute;
+    top: -28px;
+    width: 100%;
+    color: #707070;
+    font-size: 0.8rem;
+  }
+  &__left {
+    flex: 1;
+    text-align: right;
+  }
+}

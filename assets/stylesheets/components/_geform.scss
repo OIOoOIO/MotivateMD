@@ -1,0 +1,32 @@
+.c-geform {
+  border-top: 1px solid  rgba(0,0,0,0.1);
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+  align-items: center;
+  padding: 0 0.5rem;
+  
+  &__input, .c-geform__input .ant-input {
+    background: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+    &.ant-input {
+      padding: 0;
+    }
+    .anticon-calendar {
+      display: none;
+    }
+  }
+  &__addbtn {
+    font-size: 2rem;
+    &:hover {
+      color: $c1;
+      cursor: pointer;
+    }
+  }
+  &_description_ellipsis{
+    word-break: break-all;
+  }
+}

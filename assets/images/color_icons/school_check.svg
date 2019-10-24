@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.098 35.915">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.135" y1="-0.705" x2="1.421" y2="1.681" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9cf4ed"/>
+      <stop offset="1" stop-color="#acacff"/>
+    </linearGradient>
+  </defs>
+  <g id="School_Check" data-name="School Check" transform="translate(21316.758 -1191.881)">
+    <path id="Union_13" data-name="Union 13" class="cls-1" d="M0,35.915V32.807H37.1v3.108ZM28.469,28.46V15.445h3.592V28.46Zm-11.726,0V15.445h3.618V28.46Zm-11.816,0V15.445H8.74V28.46ZM0,11.725V8.375L18.551,0,37.1,8.375v3.35Z" transform="translate(-21316.76 1191.881)"/>
+    <path id="Path_1908" data-name="Path 1908" class="cls-2" d="M0,8.914,4.112,12.98,14.586,0" transform="matrix(0.998, 0.07, -0.07, 0.998, -21308.242, 1202.835)"/>
+  </g>
+</svg>

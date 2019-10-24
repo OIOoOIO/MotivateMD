@@ -1,0 +1,40 @@
+.c-uniselect {
+  display: flex;
+  &__num {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0.8rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+  }
+  &__dropdown {
+    width: 100%;
+    max-width: 81%;
+  }
+  .ant-select-selection--single {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__addbtn {
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 2rem;
+    &:hover {
+      color: $c1;
+      cursor: pointer;
+    }
+  }
+  &__removebtn {
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 1.2rem;
+    padding: 0.7rem 0.45rem 0rem;
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

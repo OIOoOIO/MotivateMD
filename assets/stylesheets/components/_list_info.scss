@@ -1,0 +1,15 @@
+.c-list_info {
+  display: flex;
+  &__left {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: black;
+  }
+  &__right {
+    flex: 1;
+    text-align: right;
+    // (05-02-2019) making this css change as per client change request. change is color: rgba(0,0,0,0.1); to color: black;
+    //color: rgba(0,0,0,0.1);
+    color: black;
+  }
+}

@@ -1,0 +1,223 @@
+.c-applist {
+  &__item {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    &__num {
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+    }
+    &__title {
+      flex: 1;
+      padding: 0 1rem 0 0.5rem;
+    }
+    &__input {
+      padding: 1rem 0.5rem;
+      background: #f7f7f7;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &__actions {
+      display: flex;
+      align-items: center;
+    }
+    &__logged_btn {
+      font-size: 2rem;
+      color: $c1;
+      
+      &:hover {
+        color: $c1;
+        cursor: pointer;
+      }
+    }
+    &__edit_btn {
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid #08a5e1;
+      color: #08a5e1;
+      &:hover {
+        background: #08a5e1;
+        color: white;
+      }
+    }
+  
+    &__delete_btn {
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid #ff8373;
+      color: #ff8373;
+      &:hover {
+        background: #ff8373;
+        color: white;
+      }
+    }
+  }
+  &__form {
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    &__num {
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+    }
+    &__title {
+      flex: 1;
+      padding: 0 1rem 0 0.5rem;
+    }
+    &__input {
+      padding: 1rem 0.5rem;
+      background: #f7f7f7;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &__actions {
+      display: flex;
+      align-items: center;
+    }
+    &__add_btn {
+      font-size: 2rem;
+      &:hover {
+        color: $c1;
+        cursor: pointer;
+      }
+    }
+  }
+  &_content-box{
+     padding: 10px;
+     border: 1px solid #808080;
+     box-sizing: content-box;
+     margin-left: 50px;
+     margin-top: 30px;
+  }
+
+  &_note_header{
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &_note_form{
+    margin-left: 50px;
+  }
+
+  &_input_width{
+    //width: 100%;
+  }
+
+  &_btn-padding{
+    padding: 0.4rem 1rem;
+  }
+
+  &_save_btn{
+    background: rgb(6, 66, 119);
+    background-color: rgb(6, 66, 119);
+    font-size: 11px;
+    &:hover {
+        background: #004d99;
+    }
+
+    &:focus{
+       background: rgb(6, 66, 119);
+    }
+  }
+
+  &_default_btn{
+    background: #fff;
+    color: #808080;
+    border: 1px solid #808080;
+    font-size: 11px;
+     &:hover {
+        background: #b3b3b3;
+        color: #cccccc;
+        border: 1px solid #cccccc;
+     }
+  }
+
+  &_border{
+     border: 1px solid #ccc;
+     border-style: dashed;
+     position: relative;
+  }
+
+  &_textarea-border{
+    border: 1px solid #aaa;
+  }
+
+  &_input-bottom-border{
+    border-bottom: 1px solid #aaa;
+
+    &:hover {
+       border-bottom: 1px solid #aaa;
+    }
+  }
+
+  &_note-title{
+    font-weight: bold;
+    font-size: 16px;
+    word-break: break-all
+  }
+
+  &_cursor-default{
+    cursor: default;
+  }
+
+  &_delete_btn{
+    background: #ff8373;
+    color: #fff;
+    border: 1px solid #ff8373;
+    font-size: 11px;
+     &:hover {
+        background: #ff8e80;
+        color: #fff;
+        border: 1px solid #ff8e80;
+     }
+  }
+
+}
+
+.c-applist__form__input.c-applist_input_width.textarea-adjust-in-box,
+.c-applist__form__input.c-applist_input_width.textarea-adjust-in-box-edit{
+  color: rgb(117, 117, 117);
+}
+
+.textarea-adjust-in-box{
+	width: 100%;
+  height: 108px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.textarea-adjust-in-box-edit{
+	width: 100%;
+  height: 152px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.application-note-angle-right{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.application-note-header-cls{
+    border: 0px;
+    background: #ddd;
+    color: #707070;
+}

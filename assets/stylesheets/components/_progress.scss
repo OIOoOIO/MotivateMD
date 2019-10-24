@@ -1,0 +1,41 @@
+.c-progress {
+  padding: 1rem 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  
+  &--goal {
+    padding: 2rem 0 1rem;
+  }
+  &__title {
+    font-weight: 600;
+    color: #707070;
+  }
+  &__edit_icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    border: 1px solid #08a5e1;
+    &:hover {
+      background: #08a5e1;
+      color: white;
+    }
+  }
+  &__list_title {
+    font-weight: 600;
+    color: #707070;
+    font-size: 0.9rem;
+  }
+}
+.coming-soon-title{
+    text-align: center;
+    width: 350px;
+    border: 5px solid #ddd;
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.coming-soon-bold{
+    font-weight: bold;
+}

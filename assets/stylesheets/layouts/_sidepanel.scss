@@ -1,0 +1,20 @@
+.l-sidepanel {
+  display: flex;
+  align-items: stretch;
+  min-height: calc(100vh - 64px);
+  margin: 0;
+
+  @include xsdevice {
+    display: block;
+  }
+  &__main {
+    flex-shrink: 0;
+    flex-grow: 1;
+    //width: calc(100% - 300px);
+  }
+  &__side {
+    width: 300px;
+    overflow: hidden;
+    border-left: 1px solid rgba(0,0,0,0.1);
+  }
+}

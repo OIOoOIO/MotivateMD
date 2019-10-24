@@ -1,0 +1,13 @@
+.c-signup_road {
+  list-style: none;
+  li {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  &__icon {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+$xsmdevice-max: 420px;
+$xsdevice-max: 576px;
+$smdevice-max:  768px;
+$mddevice-max:  992px;
+$lgdevice-max:  1200px;
+
+@mixin xsdevice {
+  @media only screen and (max-width: #{$xsdevice-max - 1px}) {
+    @content;
+  }
+}
+
+@mixin smdevice {
+  @media only screen and (min-width: #{$xsdevice-max}) and (max-width: #{$smdevice-max - 1px})  {
+    @content;
+  }
+}
+
+@mixin mddevice {
+  @media only screen and (min-width: #{$smdevice-max}) and (max-width: #{$mddevice-max - 1px})  {
+    @content;
+  }
+}
+
+@mixin lgdevice {
+  @media only screen and (min-width: #{$mddevice-max}) and (max-width: #{$lgdevice-max - 1px})  {
+    @content;
+  }
+}
+
+@mixin xldevice {
+  @media only screen and (min-width: #{$lgdevice-max}) {
+    @content;
+  }
+}
+
+.xs-hide {
+  @include xsdevice {
+    display: none !important;
+  }
+}
+.sm-hide {
+  @include smdevice {
+    display: none !important;
+  }
+}
+.md-hide {
+  @include mddevice {
+    display: none !important;
+  }
+}
+.lg-hide {
+  @include lgdevice {
+    display: none !important;
+  }
+}
+.xl-hide {
+  @include xldevice {
+    display: none !important;
+  }
+}

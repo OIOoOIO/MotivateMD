@@ -1,0 +1,480 @@
+$blue-1: #009fc4;
+$blue-2: #0c7ead;
+
+.truncate {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.disclaimer {
+	margin: 0 auto 50px;;
+	text-align: center;
+	width: 400px;
+}
+
+// Buttons
+.mail-btn {
+	border: none;
+	cursor: pointer;
+	display: block;
+	//font-family: $font-base;
+	font-size: 16px;
+	outline: none;
+	padding: 15px;
+	transition: all .1s linear;
+}
+
+.ant-btn.ant-btn-sm{
+	padding: 0 7px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 24px;
+}
+
+.attach-file-container{
+	display: inline-block;
+	.ant-upload-list-item-info > span{
+		margin-right: 10px;
+	}
+	.ant-upload-disabled{
+	    opacity: 0.4;
+	}
+}
+
+.inbox-main-container{
+    height: 100%;
+    .ht-100{
+    	//height: 100%;
+    }
+	.col-12{
+		padding: 0;
+	}
+	.sidebar-col{
+	    padding: 0 15px;
+	}
+	.email-detail-col{
+		padding-right: 30px;
+		color: #000;
+	}
+}
+
+// Indox search container
+.email-search-container{
+	.ant-input-prefix{
+		//@include commonTransform(translateY(-50%) rotate(270deg));
+	}
+	.ant-input-affix-wrapper{
+		.ant-input{
+			min-height: 84px;
+			border-top-width: 0;
+		    border-left-width: 0;
+		    padding-left: 40px;
+		}
+		.ant-input:hover, .ant-input:focus{
+			border-color: #d9d9d9;
+			box-shadow: none;
+		}
+	}
+}
+
+// Inbox wrapper
+$app-height: 500px;
+$sidebar-width: 200px;
+
+.inbox-container {
+	//float: left;
+	//height: $app-height;
+	//width: calc(100% - #{$sidebar-width});
+	height: 100%;
+}
+
+.wrapper {
+	box-shadow: 0 4px 20px rgba(51, 51, 51, .2);
+	margin: 50px auto;
+	overflow: auto;
+	width: 1024px;
+}
+
+#sidebar {
+	background: #34393d;
+	overflow-y: auto;
+	//height: 100%;
+	//float: left;
+	//height: $app-height;
+	//width: $sidebar-width;
+	
+	.sidebar__inboxes, .sidebar__tags {
+		margin-top: 10px;
+		padding-left: 0;
+	    list-style: none;
+		.item-count {
+			background: #34393d;
+			border-radius: 5px;
+			float: right;
+			padding: 2px 8px;
+			margin: 0 -8px;
+		}
+		
+		li a {
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			margin-bottom: 5px;
+			padding: 5px 15px;
+			text-decoration: none;
+			transition: all .1s linear;
+			width: 100%;
+			min-height: 34px;
+			&:hover {
+				background: #404549;
+			}
+		}
+		
+		li.selected-section a{
+		    color: #0382b3;
+		    font-size: 16px;
+		    .item-count {
+		    	margin: -2px -8px;
+			}
+		}
+		
+		.anticon {
+			margin-right: 10px;
+		}
+	}
+	
+	.sidebar__tags {
+		margin-top: 40px;
+	    padding-top: 20px;
+	    border-top: 1px solid #404040;
+	    .tag-title{
+	    	padding-left: 15px;
+	    	font-size: 16px;
+	    	margin-bottom: 10px;
+	    }
+		.c-upcoming__tag{
+			display: inline-block;
+		    margin-right: 10px;
+		}
+	}
+	
+	.mail-btn.compose {
+		color: #fff;
+		padding: 30px 15px;
+		text-align: center;
+		text-decoration: none;
+		transition: all .1s linear;
+		width: 100%;
+		//@include background-image(linear-gradient(bottom right, $blue-1, $blue-2));
+	    background-size: 100%;
+	    background-image: -webkit-gradient(linear, 100% 100%, 0% 0%, color-stop(0%, $blue-1), color-stop(100%, $blue-2));
+	    background-image: -moz-linear-gradient(bottom right, $blue-1, $blue-2);
+	    background-image: -webkit-linear-gradient(bottom right, $blue-1, $blue-2);
+	    background-image: linear-gradient(to top left, $blue-1, $blue-2);
+		
+		&:hover {
+			background-size: 150%;
+			.anticon {
+				-webkit-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+		}
+		
+		.anticon {
+			margin-left: 10px;
+			transition: all .1s linear;
+		}
+	}
+}
+
+.tag-chip-container{
+	margin-bottom: 6px;
+	.tag-chip{
+		padding: 5px 10px;
+	    margin-right: 5px;
+	    border-radius: 14px;
+	    color: #fff;
+	    display: inline-block;
+	    font-size: 10px;
+	}
+}
+
+.username-container{
+	position: relative;
+	padding-left: 50px;
+	&__username{
+		position: absolute;
+	    top: 50%;
+	    left: 0px;
+	    @include commonTransform(translateY(-50%));
+	    color: #fff;
+	    font-weight: 600;
+	    background-color: #ff4500;
+	    border-radius: 50%;
+	    width: 40px;
+	    height: 40px;
+	    display: inline-flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+}
+
+.attachment-container{
+	.ant-btn{
+		margin-right: 5px;
+		margin-bottom: 5px;
+		background-color: transparent;
+    	color: #000;
+    	i{
+    		color: red;
+    	}
+	}
+}
+
+// Email list
+.email-list {
+	background: #f6f8f9;
+	//float: left;
+	border-right: 1px solid #ddd;
+	//height: $app-height;
+	//height: 100%;
+	overflow-y: auto;
+	//width: 35%;
+	
+	&.empty {
+		color: #aaa;
+		text-align: center;
+		height: 100%;
+	}
+	
+	.email-item {
+		background: #fff;
+		border-bottom: 1px solid #eee;
+		cursor: pointer;
+		padding: 10px 15px;
+		position: relative;
+		
+		&.selected {
+			color: $blue-1;
+		}
+		
+		&__subject {
+			//margin-bottom: 8px;
+		}
+		
+		&__details {
+			font-size: 12px;
+			opacity: .5;
+			//text-transform: uppercase;
+		}
+		
+		&__unread-dot {
+			height: 100%;
+			right: 10px;
+			position: absolute;
+			top: 10px;
+			
+			&[data-read="false"]:before {
+				background: $blue-1;
+				border-radius: 50%;
+				content: '';
+				display: block;
+				height: 6px;
+				width: 6px;
+			}
+		}
+		
+		&__time {
+			float: right;
+			text-align: right;
+			width: 40%;
+		}
+		
+		&__subject.truncate {
+			width: 60%;
+		}
+		
+		&:hover:not(.selected) {
+			background: #fafafa;
+		}
+	}
+}
+
+// Email content
+.email-content {
+	background: #fff;
+	overflow-y: auto;
+	//border-left: 1px solid #ddd;
+	//float: left;
+	//height: $app-height;
+	position: relative;
+	//width: 65%;
+	
+	&__header {
+		background: #f6f8f9;
+		border-bottom: 1px solid #eee;
+		padding: 30px 15px;
+    	padding-left: 25px;
+	}
+	
+	&__subject {
+		font-size: 18px;
+		margin: 10px 0;
+		margin-top: 0;
+		word-break: break-all;
+		width: 90%;
+		color: #000 !important;
+	}
+
+	&__details {
+		font-size: 12px;
+		opacity: .5;
+		text-transform: uppercase;
+	}
+	
+	&__tome{
+		font-size: 12px;
+	}
+	
+	&__tome.is-cc-present{
+		display: block;
+		margin-bottom: -8px;
+	}
+
+	&__time {
+		//color: #878787;
+		color: #000;
+		float: right;
+	}
+
+	&__from {
+		//color: #878787;
+		color: #000;
+	}
+	
+	&__message {
+		padding: 20px 15px 15px;
+	}
+	
+	&__reply {
+		padding-left: 15px;
+		font-size: 12px;
+		padding-bottom: 15px;
+		.reply-btn{
+			background: none;
+		    font-size: 12px;
+		    color: #009fc4;
+		    padding-left: 5px;
+		    text-decoration: underline;
+		}
+	}
+	
+	.delete-btn {
+		cursor: pointer;
+		margin: -5px;
+		padding: 5px;
+		position: absolute;
+		right: 15px;
+		top: 30px;
+		transition: color .1s linear;
+		
+		&:hover {
+			color: #E23E57;
+		}
+	}
+	.star-btn {
+	    right: 45px;
+	    &:hover {
+            color: #009fc4;
+        }
+	}
+	.star-btn-active {
+	    color: #009fc4;
+	}
+	.delete-btn.edit-btn{
+		right: 45px;
+		&:hover {
+			color: #08A5E1;
+		}
+	}
+	.delete-btn.tag-btn{
+		right: 75px;
+		&:hover {
+            color: #008000;
+        }
+	}
+}
+
+.email-content.empty, .email-list.empty{
+	.no-msg-span{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include commonTransform(translate(-50%,-50%));
+	}
+}
+
+/******************** Compose modal CSS Start *****************************/
+
+.compose-mail-modal{
+	.ant-select{
+	    margin-bottom: 10px;
+	}
+	.ant-select-lg{
+		.ant-select-selection--multiple{
+		    min-height: 50px;
+		    .ant-select-selection__rendered > ul > li{
+		    	margin-top: 8px;
+		    }
+		    .ant-select-selection__rendered li{
+		    	line-height: 28px;
+		    }
+		}
+		.ant-select-selection__rendered{
+			line-height: 48px;
+		}
+		.ant-select-selection:hover, .ant-select-selection:focus{
+			border-color: #d9d9d9;
+			box-shadow: none;
+		}
+	}
+	.c-geform__input.ant-input{
+		margin-bottom: 10px;
+		padding: 0 15px;
+		border-radius: 5px;
+		background-color: transparent;
+    	border: 1px solid #ccc;
+    	color: #000;
+	}
+	.ql-toolbar{
+		border-top-left-radius: 5px;
+    	border-top-right-radius: 5px;
+    	background: #eaecec;
+	}
+	.ql-container{
+		border-bottom-left-radius: 5px;
+    	border-bottom-right-radius: 5px;
+	}
+	.ql-editor{
+		min-height: 300px;
+		color: #000;
+	}
+	.ant-checkbox-wrapper{
+		float: right;
+	}
+}
+
+.compose-mail-container, .tag-modal{
+	.isError{
+		border-color: red;
+		.ant-select-selection{
+			border-color: red;
+		}
+	}
+}
+
+/******************** Compose modal CSS End *****************************/

@@ -1,0 +1,87 @@
+.c-ec {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  cursor: pointer;
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__note {
+    resize: none;
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #707070;
+    &:focus {
+      border: 1px solid $c1;
+    }
+  }
+  &__num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    color: #707070;
+  }
+  &__title {
+    flex: 1;
+    padding: 0.5rem;
+    color: #707070;
+    &__input {
+      padding: 1rem 0.5rem;
+      background: #f7f7f7;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    &__logged {
+      font-size: 2rem;
+      color: $c1;
+      
+      &:hover {
+        color: $c1;
+        cursor: pointer;
+      }
+    }
+
+    &__arrow {
+      margin-right: 0.5rem;
+      color: $c1;
+      i {
+        position: relative;
+        top: 2px;
+      }
+      &:hover {
+        color: $c1;
+        cursor: pointer;
+      }
+    }
+
+    &__delete{
+      font-size: 1rem;
+      margin-left: 10px;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+  }
+  &__morebtn {
+    font-size: 2rem;
+    display: block;
+    height: 18px;
+    i {
+      position: relative;
+      top: -7px;
+    }
+  }
+
+}

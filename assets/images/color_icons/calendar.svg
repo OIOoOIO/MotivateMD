@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36.451 39.765">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.049" x2="1.128" y2="1.266" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9cf4ed"/>
+      <stop offset="1" stop-color="#acacff"/>
+    </linearGradient>
+  </defs>
+  <path id="Calendar" class="cls-1" d="M32.4,39.764H4.05A4.018,4.018,0,0,1,0,35.788L.02,7.953A3.928,3.928,0,0,1,1.192,5.144,4.027,4.027,0,0,1,4.05,3.976H6.076V0h4.05V3.976h16.2V0h4.051V3.976H32.4a4.018,4.018,0,0,1,4.05,3.977V35.788A4.018,4.018,0,0,1,32.4,39.764ZM2.52,11.785V37.127H33.932V11.785ZM14.421,24.1H8.1V17.894h6.321v6.2Z"/>
+</svg>

@@ -1,0 +1,25 @@
+.c-timeline {
+  &__line {
+    width: 32px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 0 0.3rem;
+  }
+  &__label {
+    // (05-02-2019) making this css change as per client change request. change is font-size: 0.7rem; to font-size: 11px;
+    font-weight: 700;
+    //font-size: 0.7rem;
+    font-size: 11px;
+    text-align: center;
+  }
+  &__value {
+    // (05-02-2019) making this css change as per client change request. change is font-size: 0.7rem; to font-size: 11px;
+    //font-size: 0.7rem;
+    font-size: 11px;
+    text-align: center;
+  }
+  &__time_left {
+    // (05-02-2019) making this css change as per client change request. change is font-size: 0.7rem; to font-size: 11px;
+    //font-size: 0.7rem;
+    font-size: 11px;
+  }
+}

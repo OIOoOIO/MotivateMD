@@ -1,0 +1,722 @@
+.reponsive-row-cont{
+	.c-form__label{
+		@media only screen and (max-width: $smdevice-max) {
+			padding-left: 15px;
+		}
+	}
+	.c-form__input{
+		@media only screen and (max-width: $mddevice-max) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+.graduated-gpa-btn-cont{
+	margin-bottom: 1rem !important;
+	.update-btn{
+		float: right;
+		@media only screen and (max-width: 360px) {
+			width: 100%;
+		}
+	}
+}
+
+.graduated-gpa-btn{
+	padding: .8rem;
+	float: left;
+	@media only screen and (max-width: 360px) {
+		width: 100%;
+	    padding: .8rem 2rem;
+	    margin-bottom: 1rem;
+	}
+}
+
+.alldevice-float-right{
+	float: right;
+}
+
+.mddevice-float-right{
+	@media only screen and (max-width: $mddevice-max) {
+		float: right;
+	}
+}
+
+.mddevice-float-right-cont{
+	.mddevice-float-right{
+		@media only screen and (max-width: $mddevice-max) {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.md-btn-cont{
+	@media only screen and (max-width: $mddevice-max) {
+		margin-top: 1rem;
+	}
+}
+
+//Blue gradient button css
+.c-btn-blue-gradient{
+	background: linear-gradient(45deg, #004179 0%, #4089fb 35%, #56d9fe 100%);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    position: relative;
+	&:focus{
+		text-decoration: none;
+	}
+	&:hover{
+		color: #fff;
+	}
+	.gradient-user-md{
+		height: 25px;
+		max-height: 25px;
+		width: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include commonTransform(translate(-50%,-50%));
+	}
+}
+
+.c-btn-blue-gradient.handle-margin-right{
+	margin-right: -46px;
+	z-index: 999;
+	@media only screen and (max-width: $xsmdevice-max) {
+		margin-right: -30px;
+	}
+}
+
+.application-md-btn-cont{
+	@media only screen and (max-width: $xsdevice-max) {
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+}
+
+//gradient text color
+.gradient-text-color{
+	background: linear-gradient(45deg, #004179 0%, #4089fb 35%, #56d9fe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 500;
+	.gradient-md-container{
+		display: inline-block;
+		background: linear-gradient(45deg, #004179 0%, #4089fb 35%, #56d9fe 100%);
+		padding: 10px;
+		border-radius: 50%;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.3);
+	}
+	.gradient-user-md{
+		height: 18px;
+		width: auto;
+		vertical-align: sub;
+	}
+}
+
+//remove left right padding of main container on progress screen
+.l-sidepanel__main.progress{
+	padding: 0;
+}
+
+.my-mentor-modal{
+	.ant-modal-header{
+		text-align: center;
+		padding-bottom: 0;
+		border-bottom-width: 0;
+	}
+}
+
+//progress screen changes as per client on date 06-02-2019
+.l-sidepanel__main.progress{
+	background: #F6F8F9;
+	margin-top: 2rem;
+	@media only screen and (max-width: $smdevice-max) {
+		margin-top: 0;
+	}
+	.c-tabs.progress-tabs{
+		margin-top: 0;
+		.pl-1{
+			background: rgb(77, 76, 76);
+		}
+	}
+}
+
+//sidebar changes as per client on date 07-02-2019
+.l-sidepanel__main.progress{
+	.c-tabs.progress-tabs{
+		.pl-1{
+			background: #E7EAED;
+			.c-tabs__tab{
+				margin-top: 10px;
+				background: transparent;
+				&:before, &:after{
+					background: transparent;
+					box-shadow: none;
+				}
+			}
+			.c-tabs__tab:hover{
+				background: #dde0e3;
+				&:before{
+					box-shadow: 5px 0px 0 #dde0e3;
+				}
+				&:after{
+					box-shadow: -5px 0px 0 #dde0e3;
+				}
+			}
+			.c-tabs__tab:first-child{
+				margin-right: 0;
+			}
+			.c-tabs__tab:last-child{
+				margin-left: 0;
+			}
+			.c-tabs__tab.is-active{
+				background: #ffffff;
+				z-index: 9;
+				&:before{
+					box-shadow: 2px 2px 0 #fff;
+				}
+				&:after{
+					box-shadow: -2px 2px 0 #fff;
+					z-index: 9;
+				}
+			}
+		}
+		.c-tabs__content{
+			.c-tabs__content__header{
+				background: #ffffff;
+			}
+		}
+	}
+}
+
+/* ========================================== */
+
+.card-container,
+.sidebar-compose-devise-none,
+.sidebar-compose-devise-block,
+.compose-btn-container,
+.message-tag-list {
+	display: none;
+}
+
+.upgrade-icon {
+	display: block;
+	text-align: center;
+	
+}
+
+@media only screen and (max-width: 991px) {
+    .mail-btn-right{
+        text-align: right !important;
+        float: right;
+    }
+    .sidebar-compose-none {
+    	display: none;
+    }
+    .sidebar-compose-devise-block{
+        display: block;
+    }
+    .mail-menu{
+        .ant-select{
+            width: 50%;
+            .ant-select-selection{
+                padding: 0;
+                height: 30px;
+            }
+        }
+        .mail-btn-right{
+            display: inline-block;
+        }
+    }
+
+    #sidebar {
+       height: auto !important;
+       .message-tag-list {
+	    	position: absolute;
+		    top: 90px;
+		    z-index: 9;
+		    background: #0592bb;
+		    right: -100%;
+		    width: 265px;
+		    border: 1px solid #10718e;
+		    box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.4);
+		    transition: right 0.2s;
+		    display: none;
+		    .sidebar__tags {
+		    	margin-top: 0;
+	    		padding-top: 0;
+	    		margin-bottom: 0;
+	    		border-top: 0;
+	    		li {
+	    			a {
+	    				margin-bottom: 0;
+	    				.item-count {
+	    					margin: -2px -8px 0 -8px;
+	    				}
+	    			}
+	    		}
+		    }
+		    .email-tag-list{
+		        line-height: 25px;
+			    border-bottom: 1px solid #ddd;
+			    list-style: none;
+			    font-size: 0.9rem;
+			    &:last-child {
+			    	border-bottom: 0;
+			    }
+		    }
+	    }
+	    .message-tags-list-visible {
+	    	right: 0;
+	    	display: block;
+	    }
+	    .message-tags-list-overlay {
+	    	position: fixed;
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    background: rgba(0,0,0,0.3);
+		    z-index: -1;
+	    }
+    }
+    .clear-margin {
+       margin: 0;
+    }
+    .inbox-main-container {
+        .sidebar-compose-col {
+          padding: 0;
+        }
+        .email-list {
+            height: auto !important;
+            min-height: 50px;
+        }
+        .email-detail-col {
+            padding-right: 0;
+            .email-content__header {
+                padding-left: 15px;
+            }
+        }
+    }
+    .email-search-container{
+        display: none;
+    }
+
+    
+    .compose-btn-container {
+        display: block;
+        position: fixed;
+        bottom: 70px;
+        right: 15px
+    }
+    
+}
+
+.side-panel-container {
+	@media only screen and (max-width: $smdevice-max) {
+		.l-sidepanel__side,
+		.l-sidepanel__main {
+			flex: 0 0 100%;
+		    max-width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: $xsdevice-max) {
+		.l-sidepanel__side,
+		.l-sidepanel__main {
+			padding: 0;
+		}
+		.progress-title {
+			flex: 0 0 100%;
+		    max-width: 100%;
+		    text-align: left;
+		    margin-bottom: 15px;
+		}
+		.progress-bar {
+			-ms-flex: 0 0 75%;
+		    flex: 0 0 75%;
+		    max-width: 75%;
+		}
+		.progress-tabs {
+			.c-progress--goal {
+			   padding-top: 1rem;
+			}	
+		}
+		.progress-arrow {
+			padding: 0;
+    		text-align: center;
+		}
+		.application-progress {
+			-ms-flex: 0 0 91.666667%;
+		    flex: 0 0 91.666667%;
+		    max-width: 91.666667%;
+		}
+		.c-goal_pbar__bar.is-large {
+		    height: 15px;
+		}
+		.application-progress-arrow {
+			top: -22px;
+		}
+		.progress-application-notes{
+			flex: 0 0 100%;
+			max-width: 100%;
+			margin-left: 0;
+		}
+		.clear-left {
+			margin-left: 0;
+		}
+		.progress-table-header {
+		   div {
+		       display: none;
+		   }
+		}
+/*		.progress-title,
+		.title-column {
+			-ms-flex: 0 0 25%;
+		    flex: 0 0 25%;
+		    max-width: 25%;
+		}
+		.progress-bar,
+		.progress-column {
+			-ms-flex: 0 0 50%;
+		    flex: 0 0 50%;
+		    max-width: 50%;
+		} */
+		.progress-bar {
+			.c-goal_pbar__info {
+				flex-flow: column;
+				.c-goal_pbar__done {
+					margin-bottom: 10px;
+				}
+			}
+		}
+		.table-responsive {
+			width: 100%;
+	    	overflow: auto;
+	    	
+	    	table {
+	    		min-width: 450px;
+	    	}
+		}
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1099px) {
+	.recommendations-container-block {
+		padding-left: 0!important;
+    	padding-right: 0!important;
+    	.progress-container {
+    		.c-progress__title {
+    			margin-bottom: 24px;
+    			text-align: left;
+    			-ms-flex: 0 0 100%;
+			    flex: 0 0 100%;
+			    max-width: 100%;
+    		}
+    		.recommendations-progress-bar {
+    			padding: 0;
+    			-ms-flex: 0 0 100%;
+			    flex: 0 0 100%;
+			    max-width: 100%;
+    		}
+    		.suggest-msg {
+    			padding: 0;
+    			-ms-flex: 0 0 100%;
+			    flex: 0 0 100%;
+			    max-width: 100%;
+    		}
+    		.empty-column {
+    			display: none;
+    		}
+    	}
+	}
+}
+@media only screen and (max-width: $xsdevice-max) {
+	.applist-section {
+		width: 100%;
+	    margin: 0;
+	    max-width: 100%;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	}
+	.card-layout-modal {
+		margin: 0!important;
+		.ant-input,
+		textarea {
+			border-top: 0;
+		    border-left: 0;
+		    border-right: 0;
+		    border-bottom-color: rgba(0, 0, 0, 0.1);
+		}
+		.card-layout {
+			margin: 0;
+			.c-getable-event-log {
+				width: 100%;
+			}
+			.card-list {
+				td {
+					.card-title {
+					    padding-right: 110px;
+					    margin-bottom: 10px;
+					}
+					.event-date {
+						min-height: 21px;
+					}
+					&:last-child {
+					    padding-top: 10px;
+					    padding-bottom: 10px;
+					}
+					.modal-card-input-group {
+						position: relative;
+						padding-right: 214px;
+						.modal-date-duration-input {
+							position: absolute;
+							top: 0;
+    						right: 0;
+						}
+						.ant-calendar-picker {
+							width: 115px;
+						}
+						.modal-input-duration {
+							width: 80px;
+							margin-left: 10px;
+						}
+					}
+					.date-addbtn-group {
+						position: relative;
+    					padding-right: 57px;
+    					textarea {
+    						width: 100%;
+    						padding-left: 0.5rem;
+    						padding-right: 0.5rem;
+    					}
+    					.add-card-btn {
+    						position: absolute;
+						    top: 5px;
+						    right: 0;
+    					}
+					}
+				}
+			}
+		}
+	}
+	.card-layout {
+			margin-left: 0;
+			.c-getable {
+				thead {
+					display: none;
+				}
+			}
+			tbody {
+				display: block;
+			}
+			.add-new-card-item {
+				padding: 10px 0;
+				border-top: 1px dashed rgba(0, 0, 0, 0.1);
+    			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    			
+    			.card-input-group {
+    				position: relative;
+    				margin: 10px 0;
+    				.name-input,
+    				.date-input {
+    					padding-right: 120px;
+    					height: 30px;
+    				}
+    				.name-input {
+    					input {
+    						height: 30px;
+    						border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    					}
+    				}
+    				.duration-input {
+    					height: 30px;
+    					border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    				}
+    				.duration-input,
+    				.add-card-btn {
+    					position: absolute;
+					    right: 0;
+					    width: 100px;
+					    top: 0;
+					    height: 30px;
+					    text-align: right;
+    				}
+    				.add-card-btn {
+	    				height: auto;
+    				}
+    			}
+    			.date-addbtn-group {
+    				margin: 0 0 20px 0;
+    				
+    				.ant-input {
+    					border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    				}
+    			}
+			}
+			.card-list {
+				margin: 0 0 10px 0;
+	    		display: flex;
+				td {
+					border: 1px solid rgba(0, 0, 0, 0.1);
+					width: 100%;
+					display: none;
+	   				&:last-child {
+	   					display: block;
+	   				}
+					p {
+						margin: 0;
+						position: relative;
+						padding-right: 55px;
+					}
+					.event-actions,
+					.event-duration {
+						position: absolute;
+	    				right: 0;
+	    				top: 0;
+					}
+					.event-actions {
+						i {
+							position: relative;
+							&::after {
+								content: '';
+							    position: absolute;
+							    top: -6px;
+							    bottom: -6px;
+							}
+						}
+						.c-getable__edit_btn {	
+							&::after {
+							    right: -2px;
+							    left: -6px;
+							}
+						}
+						.c-getable__delete_btn {
+							&::after {
+							    right: -6px;
+							    left: -2px;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+}
+@media only screen and (max-width: 423px) {
+	.tag-chip-container {
+		.tag-chip{
+			margin-top: 5px;
+		}    
+	}
+	
+	.recommendations-container-block {
+    	.progress-container {
+    		.recommendations-progress-bar {
+    			padding-right: 0;
+    		}
+    	}
+	}
+	
+}
+@media only screen and (max-width: 575px) {
+	.sidebar-container {
+		 width: 100%;   
+	}
+	.upgrade-icon {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.mobile-menu-nav.is-open {
+		height: auto;
+	}
+	.c-navbar__mmenu__item.is-active {
+		border-left-color: #11546d;
+	}
+	.c-navbar__mmenu__item {
+		&:hover {
+			background: rgba(0, 0, 0,0.2);
+		}
+	}
+	.mobile-menu-nav {
+		background: #0592bb;
+    	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.7);
+    	.c-navbar__mmenu__item {
+    		border-bottom: 1px solid #fff;
+    		color: #fff;
+    		&:last-child {
+    			border-bottom: 0;
+    		}
+    	}
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+	.timer-section {
+		padding: 0;
+		.pomodoro {
+			.pomodoro-timer-settings {
+				.timer-setting-container {
+					.ts-focus-section {
+						padding-right: 0;
+						.react-numeric-input {
+							input {
+								padding-right: 4px !important;
+							}
+						}	
+					}
+					.ts-break-section {
+						.ts-focus-input {
+							.react-numeric-input {
+								input {
+									padding-right: 4px !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: $xsmdevice-max), only screen and (min-width: 769px) and (max-width: 1120px), only screen and (max-width: 750px) {
+	.col-full {
+		-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.applist-section {
+		.application-note-header-cls {
+			margin-top: 10px !important;
+		}
+		 .add-applist-box {
+	    	-ms-flex: 0 0 100%;
+		    flex: 0 0 100%;
+		    max-width: 100%;
+	    }
+	}
+}
+
+@media only screen and (max-width: $xsmdevice-max) {
+	.progress-hrs {
+	    padding-left: 0;
+	}
+	.side-panel-container {
+		.application-progress-arrow {
+			padding-left: 9px;
+		}
+	}
+}
+
+.full-width {
+	width: 100%;
+}

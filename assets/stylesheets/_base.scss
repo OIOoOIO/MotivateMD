@@ -1,0 +1,56 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+body {
+  font-weight: 400;
+  font-family: $mainfont;
+  font-size: 14px;
+  color: #a2a2a2;
+}
+* {
+  outline: 0;
+}
+:focus {
+  outline: none !important;
+}
+a, a:hover {
+  color: $c1;
+  font-weight: 400;
+}
+
+h1, .h1-like, h2, .h2-like, h3, .h3-like, h4, .h4-like, h5, .h4-like {
+  font-weight: 300;
+  line-height: 1.285;
+  margin: 0;
+}
+h1, .h1-like {
+  font-size: 2.4rem;
+}
+h2, .h2-like {
+  font-size: 1.7rem;
+}
+h3, .h3-like {
+  font-size: 1.3rem;
+}
+h4, .h4-like {
+  font-size: 1rem;
+}
+
+.col-c3 {
+  color: $c3;
+}
+
+/**** Common Mixin ****/
+@mixin commonTransform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+.footer{
+    padding: 50px 0 0 0;
+}

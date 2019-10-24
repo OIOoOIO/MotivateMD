@@ -1,0 +1,16 @@
+<svg id="Progress" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28.447 23.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2.288" y1="-0.705" x2="-1.552" y2="1.58" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9cf4ed"/>
+      <stop offset="1" stop-color="#acacff"/>
+    </linearGradient>
+  </defs>
+  <path id="Bar" class="cls-1" d="M2.237,0h0A2.237,2.237,0,0,1,4.473,2.237V17.263a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2.237A2.237,2.237,0,0,1,2.237,0Z" transform="translate(12.137 6.527)"/>
+  <path id="Bar-2" data-name="Bar" class="cls-1" d="M2.237,0h0A2.237,2.237,0,0,1,4.473,2.237v11.3a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2.237A2.237,2.237,0,0,1,2.237,0Z" transform="translate(0 10.257)"/>
+  <path id="Bar-3" data-name="Bar" class="cls-1" d="M2.237,0h0A2.237,2.237,0,0,1,4.473,2.237V23.79a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2.237A2.237,2.237,0,0,1,2.237,0Z" transform="translate(23.975 0)"/>
+</svg>

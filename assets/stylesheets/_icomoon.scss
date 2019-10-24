@@ -1,0 +1,164 @@
+$i-info: "\e903";
+$i-more: "\e902";
+$i-checked: "\e900";
+$i-unchecked: "\e901";
+$i-menu: "\e927";
+$i-bell: "\e90a";
+$i-angle-down: "\e911";
+$i-angle-right: "\e912";
+$i-angle-up: "\e917";
+$i-calendar: "\e918";
+$i-focus: "\e919";
+$i-goals: "\e91a";
+$i-message: "\e925";
+$i-needle: "\e924";
+$i-pill: "\e91e";
+$i-vertical-progress: "\e91c";
+$i-progress: "\e91b";
+$i-school: "\e91d";
+$i-steth: "\e91f";
+$i-close: "\e923";
+$i-edit: "\e926";
+$i-plus-outline: "\e922";
+$i-play: "\ea1c";
+
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icomoon/icomoon.eot');
+  src:  url('../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/icomoon.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-info {
+  &:before {
+    content: $i-info; 
+  }
+}
+.i-more {
+  &:before {
+    content: $i-more; 
+  }
+}
+.i-checked {
+  &:before {
+    content: $i-checked; 
+  }
+}
+.i-unchecked {
+  &:before {
+    content: $i-unchecked; 
+  }
+}
+.i-menu {
+  &:before {
+    content: $i-menu; 
+  }
+}
+.i-bell {
+  &:before {
+    content: $i-bell; 
+  }
+}
+.i-angle-down {
+  &:before {
+    content: $i-angle-down; 
+  }
+}
+.i-angle-right {
+  &:before {
+    content: $i-angle-right; 
+  }
+}
+.i-angle-up {
+  &:before {
+    content: $i-angle-up; 
+  }
+}
+.i-calendar {
+  &:before {
+    content: $i-calendar; 
+  }
+}
+.i-focus {
+  &:before {
+    content: $i-focus; 
+  }
+}
+.i-goals {
+  &:before {
+    content: $i-goals; 
+  }
+}
+.i-message {
+  &:before {
+    content: $i-message; 
+  }
+}
+.i-needle {
+  &:before {
+    content: $i-needle; 
+  }
+}
+.i-pill {
+  &:before {
+    content: $i-pill; 
+  }
+}
+.i-vertical-progress {
+  &:before {
+    content: $i-vertical-progress; 
+  }
+}
+.i-progress {
+  &:before {
+    content: $i-progress; 
+  }
+}
+.i-school {
+  &:before {
+    content: $i-school; 
+  }
+}
+.i-steth {
+  &:before {
+    content: $i-steth; 
+  }
+}
+.i-close {
+  &:before {
+    content: $i-close; 
+  }
+}
+.i-edit {
+  &:before {
+    content: $i-edit; 
+  }
+}
+.i-plus-outline {
+  &:before {
+    content: $i-plus-outline; 
+  }
+}
+.i-play{
+	&:before {
+  		content: $i-plus-outline; //$i-play;
+	}
+}

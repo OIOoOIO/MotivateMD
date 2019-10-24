@@ -1,0 +1,116 @@
+.c-navbar {
+  height: 64px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+
+  &__lgitem {
+    height: 64px;
+    padding: 0 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    color: rgba(0,0,0, 0.7);
+  }
+  &__item {
+    height: 40px;
+    padding: 0 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    color: rgba(0,0,0, 0.7);
+    &__icon {
+      padding-right: 0.25rem;
+      font-size: 1.5rem;
+    }
+  }
+  &__pagelink {
+    color: rgba(0,0,0, 0.7);
+    font-weight: 600;
+    &:hover {
+      font-weight: 600;
+    }
+    &.is-active {
+      border-bottom: 2px solid $c1;
+    }
+    @include xsdevice {
+      display: none;
+    }
+    @include smdevice {
+      display: none;
+    }
+  }
+  &__brand {
+    height: 32px;
+  }
+  &__divider {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    height: 36px;
+    width: 0;
+    margin: 0 0.5rem;
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    background: orangered;
+    border-radius: 100px;
+    justify-content: center;
+  }
+  &__mmenu {
+    position: absolute;
+    top: 64px;
+    z-index: 10;
+    left: 0;
+    background: white;
+    width: 100%;
+    transition: height 0.4s ease;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+
+    &.is-open {
+      height: 100%;
+    }
+    &__item {
+      padding: 1rem;
+      color: rgba(0,0,0, 0.7);
+      display: flex;
+      &:hover {
+        color: $c1;
+      }
+      &.is-active {
+        border-left: 3px solid $c1;
+        background: rgba(0,0,0,0.02);
+      }
+    }
+    &__icon {
+      font-size: 1.5rem;
+      width: 40px;
+      text-align: center;
+    }
+  }
+
+  &__right_menu {
+    //width: 100%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    height: 64px;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.c-navbar__lgitem{
+	@media only screen and (max-width: 870px) {
+		margin-right: 0 !important;
+	}
+	.c-navbar__brand{
+		@media only screen and (max-width: 370px) {
+			height: auto;
+			max-width: 100%;
+		}
+	}
+}

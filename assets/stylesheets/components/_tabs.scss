@@ -1,0 +1,79 @@
+.c-tabs {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  margin-top: 2rem;
+  
+  &__tab {
+    background: #f7f7f7;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    
+    &:hover {
+      color: #707070;
+    }
+    &.is-active {
+      color: #707070;
+      // (05-02-2019) making this css change as per client change request. change is background: #efefef; to background: #E7EAED;
+      //background: #efefef;
+      background: #E7EAED;
+      &:after {
+        // (05-02-2019) making this css change as per client change request. change is background: #efefef; to background: #E7EAED;
+        //box-shadow: -2px 2px 0 #efefef;
+        box-shadow: -2px 2px 0 #E7EAED;
+      }
+      &:before {
+        // (05-02-2019) making this css change as per client change request. change is background: #efefef; to background: #E7EAED;
+        //box-shadow: 2px 2px 0 #efefef;
+        box-shadow: 2px 2px 0 #E7EAED;
+      }
+    }
+    &:before {
+      content: ' ';
+      width: 10px;
+      height: 10px;
+      background: white;
+      display: inline-block;
+      position: absolute;
+      left: -10px;
+      bottom: 0;
+      border-bottom-right-radius: 8px;
+      box-shadow: 5px 0px 0 #f7f7f7;
+    }
+    &:after {
+      content: ' ';
+      width: 10px;
+      height: 10px;
+      background: white;
+      display: inline-block;
+      position: absolute;
+      right: -10px;
+      bottom: 0;
+      border-bottom-left-radius: 8px;
+      box-shadow: -5px 0px 0 #f7f7f7;
+    }
+  }
+
+  &__content {
+    // (05-02-2019) making this css change as per client change request. change is background: #f7f7f7; to background: #F6F8F9;
+    //background: #f7f7f7;
+    background: #F6F8F9;
+    min-height: calc(100vh - 158px);
+    &__header {
+      color: #707070;
+      // (05-02-2019) making this css change as per client change request. change is background: #efefef; to background: #E7EAED;
+      //background: #efefef;
+      background: #E7EAED;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+  }
+}

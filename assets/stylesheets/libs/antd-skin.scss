@@ -1,0 +1,99 @@
+body {
+  font-weight: 400;
+  font-family: $mainfont;
+  font-size: 14px;
+}
+.ant-btn {
+  background: $c1;
+  color: white;
+  box-shadow: none;
+  border: none;
+  padding: .8rem 2rem;
+  font-size: 14px;
+  border-radius: 3px;
+  font-family: $mainfont;
+  height: initial;
+  
+  &:hover {
+    background: $c2;
+    color: white;
+  }
+
+  &:focus {
+    background: $c2;
+    color: white;
+  }
+
+  &.is-small {
+    padding: .5rem 1rem;
+    font-size: 12px;
+  }
+}
+.is-small {
+  .ant-input {
+    height: 30px;
+    padding: 0.5rem;
+  }
+}
+.ant-input {
+  height: 50px;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 2px;
+  width: 100%;
+
+  &.is-small {
+    height: 30px;
+    padding: 0.5rem;
+  }
+}
+.ant-select {
+  width: 100%;
+}
+.ant-select-selection--single {
+  height: 50px;
+  padding: 0.5rem;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.ant-form-item-label {
+  line-height: 50px;
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background: $c1;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title:after {
+  background-color: $c1;
+}
+.ant-steps-item-finish .ant-steps-item-icon {
+  border-color: $c1;
+  .anticon svg {
+    color: $c1;
+  }
+}
+
+.ant-calendar-picker, .ant-time-picker {
+  width: 100%;
+}
+
+.ant-progress-inner {
+  background: #e8e8e8;
+}
+
+.ant-progress-bg {
+  height: 15px !important;
+}
+.is-large .ant-progress-bg {
+  height: 30px !important;
+}
+
+.ant-time-picker-input {
+  height: 50px;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 2px;
+  width: 100%;
+}

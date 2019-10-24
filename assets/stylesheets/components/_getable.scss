@@ -1,0 +1,40 @@
+.c-getable {
+  width: 100%;
+  
+  tr td, tr th {
+    padding: 0 0.5rem
+  }
+  
+  &__save_btn {
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #000;
+    color: #000;
+    &:hover {
+      background: #737373;
+      color: white;
+    }
+  }
+
+  &__edit_btn {
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #08a5e1;
+    color: #08a5e1;
+    &:hover {
+      background: #08a5e1;
+      color: white;
+    }
+  }
+
+  &__delete_btn {
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #ff8373;
+    color: #ff8373;
+    &:hover {
+      background: #ff8373;
+      color: white;
+    }
+  }
+}

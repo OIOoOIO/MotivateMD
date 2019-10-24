@@ -1,0 +1,267 @@
+.l-sidepanel__main.calendar{
+	//width: auto;
+	@media only screen and (min-width: $xsdevice-max) {
+	    //width: calc(100% - 400px);
+  	}
+}
+
+.calendar-container{
+	height: 100%;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.rbc-calendar{
+	padding: 0 5px;
+	@media only screen and (min-width: 769px) {
+	    height: 100% !important;
+  	}
+}
+@media only screen and (max-width: 768px) {
+	.week, .day {
+		.rbc-calendar{
+			 height: 100% !important;
+		}
+	}
+}
+@media only screen and (max-width: 575px) {
+	.side-panel-container {
+		.footer {
+			display: none;
+		}
+	}
+}
+
+.rbc-toolbar{
+	margin: 20px 5px;
+	.rbc-toolbar-label{
+		//font-size: 1.4rem;
+    	color: #4e505d;
+    	@media only screen and (max-width: 850px) {
+    		width: 100%;
+    		margin: 10px 0;
+    	}
+	}
+}
+
+.rbc-month-view, .rbc-time-view{
+	border-radius: 2px;
+}
+
+.rbc-time-view{
+	.rbc-row{
+	    //min-height: 34px;
+	}
+	.rbc-allday-cell{
+		.rbc-row-bg{
+			top: 10px;
+		}
+	}
+}
+
+.rbc-date-cell{
+	color: #717085;
+}
+
+.rbc-header{
+	min-height: 35px;
+    position: relative;
+    text-transform: uppercase;
+    background-color: #f5f6f9;
+    span{
+    	top: 50%;
+    	left: 50%;
+    	@include commonTransform(translate(-50%,-50%));
+   		position: absolute;
+   		color: #a9adba;
+    }
+}
+
+.rbc-header + .rbc-header{
+	border-left-width: 0;	
+}
+
+.rbc-label.rbc-time-header-gutter{
+	position: relative;
+	&:before{
+		content: "";
+	    height: 35px;
+	    background-color: #f5f6f9;
+	    display: block;
+	    margin: 0 -5px;
+	    border-bottom: 1px solid #DDD;
+	    margin-right: -6px;
+	}
+	&:after{
+		content: "All day";
+	    position: absolute;
+	    top: 35px;
+	    text-transform: lowercase;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    text-align: center;
+	}
+}
+
+.rbc-off-range-bg{
+	background-color: transparent;
+}
+
+.rbc-off-range{
+	color: #cfcfd6;
+}
+
+.rbc-today{
+	background-color: #f5f6f9;
+}
+
+.rbc-btn-group{
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
+	button{
+		cursor: pointer;
+		font-size: .8rem;
+		color: #8a8b94;
+	}
+	button.rbc-active, button:focus, button.rbc-active:focus,
+	button:active, button:hover, button.rbc-active:hover,
+	button:active:hover{
+		background-color: transparent;
+		border-color: #ccc;
+		color: #6fa6ff;
+		box-shadow: none;
+	}
+}
+
+.rbc-event{
+	background-color: transparent;
+}
+
+.add-new-event-container{
+	position: absolute;
+    bottom: -6px;
+    right: 18px;
+    text-align: center;
+    z-index: 999;
+	.ant-btn-circle{
+		width: 50px;
+	    padding: 0;
+	    font-size: 1.8rem;
+	    border-radius: 50%;
+	    height: 50px;
+	    box-shadow: 0px 4px 6px rgba(0,0,0,.3);
+	}
+	.sng-text{
+		background-color: #fff;
+	    font-size: .6rem;
+	    text-transform: capitalize;
+	    margin-top: 10px;
+	    font-weight: 800;
+	    color: #828282;
+	}
+}
+
+.calendar-container.day{
+	.rbc-label.rbc-time-header-gutter{
+		&:before{
+			display: none;
+		}
+		&:after{
+			top: 0;
+		}
+	}
+	.rbc-time-view{
+		.rbc-allday-cell{
+			.rbc-row-bg{
+				top: 0;
+			}
+		}
+	}
+}
+
+.calendar-container.day, .calendar-container.week{
+	.rbc-calendar{
+		
+	}
+}
+
+/************************************** Sidebar section CSS Start **************************/
+
+.l-sidepanel__side.calendar{
+	//width: 400px;
+}
+
+.view-more-container{
+	.view-more-content{
+		text-align: right;
+		.ant-btn-dashed{
+			color: rgba(0, 0, 0, 0.65);
+		    background-color: #fff;
+		    border-color: #d9d9d9;
+		    border-style: dashed;
+		}
+		.ant-btn-dashed:hover, .ant-btn-dashed:focus {
+		    color: #40a9ff;
+		    background-color: #fff;
+		    border-color: #40a9ff;
+		}
+		.ant-btn-sm {
+		    padding: 0 7px;
+		    font-size: 12px;
+		    border-radius: 4px;
+		    height: 24px;
+		}
+	}
+}
+
+.all-event-modal-table{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    th, td{
+    	padding: .75rem;
+	    vertical-align: middle;
+    }
+    th{
+   	    border-bottom: 2px solid #dee2e6;
+    }
+    td{
+	    border-top: 1px solid #dee2e6;
+    }
+    td.event-title{
+    	word-break: break-word;
+    }
+}
+
+.all-event-list-wrapper{
+	.ant-modal-body{
+		height: 425px;
+    	overflow-y: scroll;
+	}
+}
+
+.recommendations-container{
+	.recommendations-title{
+	}
+	.recommendations-sub-title{
+	    font-size: 12px;
+    	font-style: italic;
+	}
+	.progress-container{
+		margin: 30px 0;
+	}
+	.c-progress__title, .c-goal_pbar__info, .suggest-msg{
+		font-size: 11px;
+	}
+	.c-progress__title{
+		padding: 0;
+	}
+	.c-goal_pbar__info{
+		top: -20px;
+	}
+	.suggest-msg{
+    	margin-top: 5px;
+	}
+}
+
+/************************************** Sidebar section CSS End **************************/

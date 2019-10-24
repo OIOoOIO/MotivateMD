@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 25.477 25.475">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.129" y1="-0.164" x2="1.511" y2="1.18" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9cf4ed"/>
+      <stop offset="1" stop-color="#acacff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2655" data-name="Group 2655" transform="translate(0.002 0.001)">
+    <path id="Intersection_8" data-name="Intersection 8" class="cls-1" d="M2.08,23.388A7.252,7.252,0,0,1,.01,17.8a8.771,8.771,0,0,1,2.612-5.758l9.42-9.421A8.774,8.774,0,0,1,17.8.01a7.283,7.283,0,0,1,5.588,2.075c2.977,2.977,2.739,8.067-.535,11.342l-9.426,9.426a8.774,8.774,0,0,1-6.168,2.622A7.26,7.26,0,0,1,2.08,23.388Zm1.29-10.6a7.756,7.756,0,0,0-2.3,5.063A6.207,6.207,0,0,0,2.833,22.64C5.4,25.2,9.813,24.965,12.678,22.1l4.6-4.606L7.971,8.188ZM17.853,1.072a7.733,7.733,0,0,0-5.063,2.3L8.719,7.44l9.309,9.309L22.1,12.678c2.867-2.86,3.1-7.281.542-9.84A6.149,6.149,0,0,0,18.22,1.067C18.1,1.067,17.975,1.067,17.853,1.072Z" transform="translate(0 -0.001)"/>
+  </g>
+</svg>

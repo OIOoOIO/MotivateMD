@@ -1,0 +1,285 @@
+.vl {
+    border-left: 2px solid #ddd;
+    height: 100%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    @include xsdevice {
+	    display: none;
+  	}
+}
+
+.pomodoro__timer {
+	//border-radius: 50%;
+	//height: 350px;
+	width: 350px;
+	font-size: 1em;
+	//font-family: 'Share Tech Mono', ;
+	//border: 2px solid #25B0E4;
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	@include xsdevice {
+	    width: 290px;
+  	}
+	.pomodoro-inner-content-container{
+		position: absolute;
+	    top: 50%;
+	    left: 0;
+	    color: #000;
+	    right: 0;
+	    @include commonTransform(translateY(-50%));
+	    text-align: center;
+	    .greet-msg-container{
+	    	top: 50%;
+	    	left: 50%;
+	    	@include commonTransform(translate(-50%,-50%));
+    		position: absolute;
+    		.greet-msg{
+		   	    font-size: 2rem;
+	  			color: green;
+		    }
+		    .greet-sub-msg{
+		    	font-size: 1rem;
+		    }
+	    }
+	}
+}
+
+.pomodoro-inner-content-container, .pomodoro-timer-inner-content-container{
+	.play-button{
+    	font-size: 2rem;
+    }
+    .round-status-content{
+    	font-weight: bold;
+   		font-size: 1rem;
+	    margin-top: 5px;
+   	}
+   	.timer-content{
+   		font-size: 8rem;
+    	line-height: initial;
+    	margin-top: -5%;
+    	font-weight: 300;
+    	@include xsdevice {
+		    font-size: 6rem;
+		    margin-top: -3%;
+	  	}
+   	}
+   	.timer-min-label-content{
+   		font-size: 1.2rem;
+   		color: rgba(0,0,0,.5);
+    	margin-top: -5%;
+    	@include xsdevice {
+		    margin-top: -3%;
+	  	}
+   	}
+   	.pomodoro-message-content{
+   		position: absolute;
+	    top: 50%;
+	    left: 0;
+	    right: 0;
+	    @include commonTransform(translateY(-50%));
+   	}
+}
+
+.pomodoro-timer-inner-content-container{
+	.timer-content{
+   		font-size: 6.4rem;
+	}
+	.timer-min-label-content{
+        margin-top: 0;
+	    letter-spacing: 2px;
+	}
+	.timer-rem-label-content{
+		margin-top: 0;
+	    font-size: .9rem;
+	    font-weight: 700;
+	    letter-spacing: 2px;
+	}
+}
+
+.pomodoro-container{
+	//width: 500px;
+	.pomodoro_actual_timer{
+		width: 350px;
+		//height: 350px;
+		margin: 0 auto;
+		position: relative;
+		@include xsdevice {
+	    	width: 252px;
+		}
+		.pomodoro-timer-inner-content-container{
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    @include commonTransform(translate(-50%,-50%));
+		    text-align: center;
+		    @include xsdevice {
+		    	margin-top: -1.5%;
+		    	.play-button{
+			    	font-size: 1.5rem;
+			    }
+			    .timer-content{
+			    	font-size: 4rem;
+   					margin-top: -10px;
+			    }
+			    .timer-min-label-content{
+			    	margin-top: -3%;
+			    }
+			}
+		    .greet-msg{
+	    	    font-size: 2rem;
+    			color: green;
+		    }
+		    .greet-sub-msg{
+		    	font-size: 1rem;
+		    }
+		}
+	}
+}
+
+.ts-break-title{
+	color: rgba(0,0,0,.7);
+ 	font-size: .9rem;
+ 	font-weight: 600;
+    padding: 5px 0;
+}
+
+.ts-focus-mins{
+	font-weight: 400;
+}
+
+.focus-title, .ts-focus-mins{
+	color: rgba(0,0,0,.7);
+    font-size: .9rem;
+    font-weight: 600;
+}
+    		
+.ts-focus-input{
+	padding: 10px 0;
+}
+
+.ant-input-number{
+	border-width: 0;
+	height: auto;
+	&:hover{
+		border-width: 0;
+		border-right-width: 0 !important;
+	}
+	.ant-input-number-handler-wrap{
+		opacity: 1;
+		border-left-width: 0;
+		.ant-input-number-handler-up:hover, .ant-input-number-handler-down:hover{
+			height: 50% !important;
+		}
+		.ant-input-number-handler-down{
+		    border-top-width: 0;
+		}
+	}
+	.ant-input-number-input-wrap{
+		.ant-input-number-input{
+			text-align: center;
+			font-size: 2rem;
+			height: auto;
+		}
+	}
+}
+
+.no-padding-left {
+	padding-left: 0;
+}
+
+.pomodoro-timer-settings{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    min-height: 100px;
+    @include xsdevice {
+    	margin-bottom: 10px;
+	}
+    .timer-setting-header{
+    	text-align: center;
+    	background-color: rgba(0,0,0,.7);
+    	color: #FFFFFF;
+    	font-size: 1rem;
+   	    padding: 5px 0;
+    }
+    .message-container{
+    	text-align: center;
+    }
+    .timer-setting-container{
+    	padding-right: 15px;
+    	.ts-focus-section{
+    		border-right: 1px solid rgba(0, 0, 0, 0.3);
+    		text-align: center;
+    		padding: 20px 25px;
+    		@include xsdevice {
+		    	border-right-width: 0;
+			}
+    		.ts-focus-input{
+    			padding: 0;
+    			color: #000;
+    		}
+    		.react-numeric-input{
+   				input{
+   					width: 60%;
+				    font-size: 2.6rem !important;
+				    padding-right: 15px !important;
+				    text-align: center;
+   				}
+   			}
+    	}
+    	.ts-break-section{
+    		text-align: center;
+    		.ts-short-break-section, .ts-long-break-section, .ts-long-round-section{
+    			padding-top: 10px;
+    			padding-bottom: 10px;
+    		}
+    		.focus-title, .ts-focus-mins{
+    			font-size: .7rem;
+    		}
+    		.ts-focus-input{
+    			padding: 0;
+    			color: #000;
+    			.ant-input-number{
+    				.ant-input-number-input-wrap{
+			 			.ant-input-number-input{
+		 				    font-size: 1.8rem;
+			 			}
+    				}
+    			}
+    			.react-numeric-input{
+    				input{
+    					width: 60%;
+   					    font-size: 1.8rem !important;
+   					    padding-right: 20px !important;
+    				}
+    			}
+    		}
+    		.ts-short-break-section{
+    			position: relative;
+    			hr{
+	    			position: absolute;
+				    right: -4px;
+				    top: 0;
+				    bottom: 0;
+				    height: 110%;
+				    @include xsdevice {
+				    	display: none;
+					}
+	    		}
+    		}
+    	}
+    }
+}
+
+.pomodoro-timer-modal{
+	.ant-modal-content{
+		.ant-modal-header{
+			text-align: center;
+		}
+	}
+}

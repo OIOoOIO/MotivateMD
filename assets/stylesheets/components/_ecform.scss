@@ -1,0 +1,32 @@
+.c-ecform {
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  
+  &__num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+  &__name {
+    flex: 1;
+    &__input {
+      padding: 1rem 0.5rem;
+      background: #f7f7f7;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  &__addbtn {
+    font-size: 2rem;
+    &:hover {
+      color: $c1;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.l-auth {
+  min-height: 100vh;
+  background-color: linear-gradient(225deg, #064056 0%, #1ea6de 100%);
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  display: flex;
+  @include xsdevice {
+    flex-direction: column;
+  }
+  &__road {
+    flex-basis: 50%;
+    color: white;
+    &__list {
+      padding: 8rem 1rem;
+      @include xsdevice {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+  &__panel {
+    flex-basis: 50%;
+    background: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    @include xsdevice {
+      align-self: flex-end;
+      min-height: 100vh;
+    }
+  }
+  &__brand {
+    width: 200px;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+}
